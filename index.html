@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Video Conferencing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-conferencing-app">
+    <header>
+      <h1>Video Conferencing App</h1>
+    </header>
+    <main>
+      <!-- Video Grid -->
+      <div id="video-grid" class="video-grid">
+        <video id="localVideo" autoplay muted></video>
+        <!-- Remote video streams will be appended dynamically -->
+      </div>
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <button id="muteAudio">Mute Audio</button>
+        <button id="muteVideo">Mute Video</button>
+        <button id="screenShare">Share Screen</button>
+        <button id="endCall">End Call</button>
+      </div>
+    </main>
+    <!-- Chat Section -->
+    <aside class="chat-section">
+      <div class="chat-messages" id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message">
+      <button id="sendMessage">Send</button>
+    </aside>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
+<canvas id="whiteboard" class="whiteboard"></canvas>
